@@ -14,3 +14,10 @@ ana.pensar();
 ana.getNombre();
 */
 
+/*
+Gato objetoGato = new Gato();
+objetoGato.maullar();
+*/
+
+Gato objetoGato2 = new Gato("Siamés", 32);
+objetoGato2.informacionGato();
