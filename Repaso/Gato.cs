@@ -6,15 +6,19 @@ using System.Threading.Tasks;
 
 namespace Repaso
 {
-    public class Gato
+    public class Gato : Animal
     {
         private string raza;
         private int edad;
 
-
+        //METODO CONSTRUCTOR
         public Gato()
         {
 
+        }
+
+        public Gato(string nombre) : base (nombre){
+        
         }
 
         public Gato(string parametroRaza, int parametroEdad)
@@ -22,6 +26,8 @@ namespace Repaso
             this.raza = parametroRaza;
             this.edad = parametroEdad;
         }
+
+
 
         public void maullar()
         {
@@ -36,6 +42,10 @@ namespace Repaso
                 );
         }
 
+        public override void pensar()
+        {
+            Console.WriteLine("Estoy pensando, miau");
+        }
 
         // Getters y setters
         public void setRaza(string parametroRaza){
